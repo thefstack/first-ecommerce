@@ -4,7 +4,7 @@ import axios from "axios";
 
 const AppContext=createContext();
 
-const ProductAPI="http://localhost:5000/products/getproducts"
+const ProductAPI="https://first-ecommerce-api.onrender.com/products/getproducts"
 
 const initialState={
     isLoading:false,
@@ -33,7 +33,7 @@ const AppProvider=({children})=>{
     }
     const getSingleProduct=async(id)=>{
         dispatch({type:"SET_SINGLE_LOADING"});
-        const url=`http://localhost:5000/products/getproducts/${id}`;
+        const url=`https://first-ecommerce-api.onrender.com/products/getproducts/${id}`;
         try{
             const res=await axios.get(url);
             const product=await res.data;
