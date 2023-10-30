@@ -15,13 +15,7 @@ const SingleProduct = () => {
     const {addToCart}=useCartContext()
 
     const cartBtn=async()=>{
-        addToCart(singleProduct);
-        document.getElementById("cart-response").style.display="flex";
-        
-        setTimeout(()=>{
-            document.getElementById("cart-response").style.display="none";
-        },3000)
-        
+        addToCart(singleProduct);        
     }    
 
     const {title,image,description,price}=singleProduct;
