@@ -136,7 +136,7 @@ justify-content:center;
     left: 0;
     gap: 10px;
     background-color: #34495e;
-    height: 100vh;
+    height: 100%;
     width: 200px;
     z-index: 99;
     padding: 80px 30px;
