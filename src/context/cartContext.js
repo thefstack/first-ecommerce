@@ -10,8 +10,8 @@ const initialState = {
   cart: [],
 };
 
-const CartAPI="http://localhost:5000/products/"
-const userCartAPI="http://localhost:5000/user/cart"
+const CartAPI="https://first-ecommerce-api.onrender.com/products/"
+const userCartAPI="https://first-ecommerce-api.onrender.com/user/cart"
 
 const CartProvider = ({ children }) => {
   const [state, dispatch] = useReducer(cartReducer, initialState);
